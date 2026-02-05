@@ -1,13 +1,13 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
-import { Code2, Laptop, Rocket, Users } from "lucide-react";
+import { Brain, Database, Code2, Cpu } from "lucide-react";
 
 const stats = [
-  { icon: Code2, value: "5+", label: "Years Experience" },
-  { icon: Laptop, value: "50+", label: "Projects Completed" },
-  { icon: Users, value: "30+", label: "Happy Clients" },
-  { icon: Rocket, value: "100%", label: "Success Rate" },
+  { icon: Brain, value: "AI/ML", label: "Specialization" },
+  { icon: Database, value: "RAG", label: "Pipelines Built" },
+  { icon: Code2, value: "8.37", label: "CGPA" },
+  { icon: Cpu, value: "LLMs", label: "Expertise" },
 ];
 
 const About = () => {
@@ -26,9 +26,9 @@ const About = () => {
           >
             <span className="text-primary font-medium mb-4 block">About Me</span>
             <h2 className="font-display text-4xl md:text-5xl font-bold mb-6">
-              Passionate About Creating
+              AI & Machine Learning
               <br />
-              <span className="text-gradient">Digital Excellence</span>
+              <span className="text-gradient">Developer</span>
             </h2>
           </motion.div>
 
@@ -41,15 +41,14 @@ const About = () => {
               <div className="glass-card rounded-2xl p-8 relative overflow-hidden">
                 <div className="absolute top-0 right-0 w-32 h-32 bg-primary/10 rounded-full blur-2xl" />
                 <p className="text-muted-foreground text-lg leading-relaxed mb-6 relative z-10">
-                  I'm a Full Stack Developer with over 5 years of experience building 
-                  web applications that make a difference. My expertise spans from 
-                  crafting beautiful React frontends to developing robust Django backends.
+                  I'm an AI & Machine Learning Developer with a strong foundation in Python, 
+                  NLP, backend APIs, and ML model development. Currently working at 
+                  Quantum Works Private Limited, building enterprise-grade AI solutions.
                 </p>
                 <p className="text-muted-foreground text-lg leading-relaxed relative z-10">
-                  I believe in writing clean, maintainable code and creating user 
-                  experiences that are both intuitive and delightful. When I'm not 
-                  coding, you'll find me exploring new technologies or contributing 
-                  to open-source projects.
+                  I specialize in building LLMs, RAG pipelines, vector search, and 
+                  deploying data-driven applications using Django and FastAPI. 
+                  B.Tech in CSE (AI) from Narasaraopeta Engineering College.
                 </p>
               </div>
             </motion.div>
@@ -69,7 +68,7 @@ const About = () => {
                   className="glass-card rounded-xl p-6 text-center hover:border-primary/30 transition-colors duration-300"
                 >
                   <stat.icon className="mx-auto mb-3 text-primary" size={28} />
-                  <div className="font-display text-3xl font-bold text-foreground mb-1">
+                  <div className="font-display text-2xl font-bold text-foreground mb-1">
                     {stat.value}
                   </div>
                   <div className="text-sm text-muted-foreground">{stat.label}</div>

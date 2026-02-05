@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ArrowDown, Github, Linkedin, Mail } from "lucide-react";
+import { ArrowDown, Github, Linkedin, Mail, Download } from "lucide-react";
 
 const Hero = () => {
   return (
@@ -19,7 +19,7 @@ const Hero = () => {
             className="mb-6"
           >
             <span className="inline-block px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium border border-primary/20">
-              Full Stack Developer
+              AI & Machine Learning Developer
             </span>
           </motion.div>
 
@@ -30,7 +30,7 @@ const Hero = () => {
             className="font-display text-5xl md:text-7xl font-bold mb-6 leading-tight"
           >
             Hi, I'm{" "}
-            <span className="text-gradient">John Doe</span>
+            <span className="text-gradient">Lakshman Rao Botuku</span>
           </motion.h1>
 
           <motion.p
@@ -39,8 +39,8 @@ const Hero = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto"
           >
-            I build exceptional digital experiences with React, Python & Django.
-            Passionate about creating elegant solutions to complex problems.
+            Building intelligent systems with Python, Django & LLMs.
+            Passionate about AI, RAG pipelines, and scalable solutions.
           </motion.p>
 
           <motion.div
@@ -56,10 +56,12 @@ const Hero = () => {
               View My Work
             </a>
             <a
-              href="#contact"
-              className="px-8 py-4 border border-border text-foreground rounded-lg font-semibold hover:bg-secondary transition-all duration-300"
+              href="/Lakshman_Rao_Botuku.pdf"
+              download
+              className="px-8 py-4 border border-primary text-primary rounded-lg font-semibold hover:bg-primary hover:text-primary-foreground transition-all duration-300 flex items-center gap-2"
             >
-              Get In Touch
+              <Download size={18} />
+              Download Resume
             </a>
           </motion.div>
 
@@ -71,9 +73,9 @@ const Hero = () => {
             className="flex items-center justify-center gap-6"
           >
             {[
-              { icon: Github, href: "https://github.com", label: "GitHub" },
-              { icon: Linkedin, href: "https://linkedin.com", label: "LinkedIn" },
-              { icon: Mail, href: "mailto:hello@example.com", label: "Email" },
+              { icon: Github, href: "https://github.com/LakshmanRaoBotuku", label: "GitHub" },
+              { icon: Linkedin, href: "https://linkedin.com/in/lakshmanraobotuku", label: "LinkedIn" },
+              { icon: Mail, href: "mailto:botukulakshmanraonaidu@gmail.com", label: "Email" },
             ].map((social) => (
               <a
                 key={social.label}
