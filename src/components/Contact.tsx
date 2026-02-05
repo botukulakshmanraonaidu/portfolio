@@ -17,7 +17,6 @@ const Contact = () => {
     e.preventDefault();
     setIsSubmitting(true);
     
-    // Simulate form submission
     await new Promise((resolve) => setTimeout(resolve, 1000));
     
     toast.success("Message sent successfully! I'll get back to you soon.");
@@ -26,9 +25,9 @@ const Contact = () => {
   };
 
   const contactInfo = [
-    { icon: Mail, label: "Email", value: "hello@example.com", href: "mailto:hello@example.com" },
-    { icon: Phone, label: "Phone", value: "+1 (555) 123-4567", href: "tel:+15551234567" },
-    { icon: MapPin, label: "Location", value: "San Francisco, CA", href: null },
+    { icon: Mail, label: "Email", value: "botukulakshmanraonaidu@gmail.com", href: "mailto:botukulakshmanraonaidu@gmail.com" },
+    { icon: Phone, label: "Phone", value: "+91 6305913197", href: "tel:+916305913197" },
+    { icon: MapPin, label: "Location", value: "Hyderabad, India", href: null },
   ];
 
   return (
@@ -46,8 +45,8 @@ const Contact = () => {
               Let's Work Together
             </h2>
             <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-              Have a project in mind? I'd love to hear about it. Send me a message
-              and let's create something amazing together.
+              Looking for an AI/ML developer? I'd love to hear about your project.
+              Send me a message and let's build something amazing together.
             </p>
           </motion.div>
 
@@ -127,8 +126,9 @@ const Contact = () => {
             >
               <div className="glass-card rounded-2xl p-8 space-y-8">
                 <p className="text-muted-foreground text-lg">
-                  I'm currently available for freelance work and full-time positions.
-                  If you have a project that needs coding expertise, don't hesitate to reach out.
+                  I'm currently available for freelance work and full-time positions
+                  in AI/ML development. If you have a project that needs AI expertise, 
+                  don't hesitate to reach out.
                 </p>
                 
                 <div className="space-y-6">

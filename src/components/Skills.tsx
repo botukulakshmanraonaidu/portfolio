@@ -5,28 +5,31 @@ const skillCategories = [
   {
     title: "Frontend",
     skills: [
-      { name: "React", level: 95 },
-      { name: "TypeScript", level: 90 },
-      { name: "Tailwind CSS", level: 92 },
-      { name: "Next.js", level: 85 },
+      { name: "HTML", level: 95 },
+      { name: "CSS", level: 92 },
+      { name: "JavaScript", level: 90 },
+      { name: "React.js", level: 85 },
+      { name: "Tailwind CSS", level: 88 },
     ],
   },
   {
-    title: "Backend",
+    title: "Backend & AI/ML",
     skills: [
-      { name: "Python", level: 93 },
-      { name: "Django", level: 90 },
+      { name: "Python", level: 95 },
+      { name: "Django", level: 92 },
+      { name: "FastAPI", level: 85 },
+      { name: "REST APIs", level: 90 },
       { name: "PostgreSQL", level: 88 },
-      { name: "REST APIs", level: 92 },
     ],
   },
   {
-    title: "Tools & Others",
+    title: "LLM & AI Technologies",
     skills: [
-      { name: "Git", level: 90 },
-      { name: "Docker", level: 82 },
-      { name: "AWS", level: 78 },
-      { name: "CI/CD", level: 85 },
+      { name: "LangChain", level: 88 },
+      { name: "HuggingFace", level: 85 },
+      { name: "OpenAI GPT", level: 90 },
+      { name: "RAG Pipelines", level: 87 },
+      { name: "TensorFlow", level: 80 },
     ],
   },
 ];
@@ -50,8 +53,8 @@ const Skills = () => {
               Technologies I Work With
             </h2>
             <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-              I'm proficient in a wide range of technologies across the full stack,
-              allowing me to build complete, production-ready applications.
+              Specialized in AI/ML development with expertise in Python, Django,
+              and cutting-edge LLM technologies for building intelligent systems.
             </p>
           </motion.div>
 
