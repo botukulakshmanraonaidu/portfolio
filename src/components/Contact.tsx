@@ -40,6 +40,7 @@ const Contact = () => {
     setIsSubmitting(true);
     
     try {
+      // Save to database
       const { error } = await supabase.from("contacts").insert({
         name: validation.data.name,
         email: validation.data.email,
@@ -47,6 +48,20 @@ const Contact = () => {
       });
 
       if (error) throw error;
+
+      // Send email notification (fire and forget - don't block on failure)
+      fetch(`${import.meta.env.VITE_SUPABASE_URL}/functions/v1/send-contact-notification`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${import.meta.env.VITE_SUPABASE_PUBLISHABLE_KEY}`,
+        },
+        body: JSON.stringify({
+          name: validation.data.name,
+          email: validation.data.email,
+          message: validation.data.message,
+        }),
+      }).catch(console.error);
 
       toast.success("Message sent successfully! I'll get back to you soon.");
       setFormData({ name: "", email: "", message: "" });
