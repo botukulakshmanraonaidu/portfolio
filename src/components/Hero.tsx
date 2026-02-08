@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { ArrowDown, Github, Linkedin, Mail, Download } from "lucide-react";
+import RoleTypewriter from "./RoleTypewriter";
 
 const Hero = () => {
   return (
@@ -27,11 +28,20 @@ const Hero = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.1 }}
-            className="font-display text-5xl md:text-7xl font-bold mb-6 leading-tight"
+            className="font-display text-5xl md:text-7xl font-bold mb-4 leading-tight"
           >
             Hi, I'm{" "}
             <span className="text-gradient">Lakshman Rao Botuku</span>
           </motion.h1>
+
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.15 }}
+            className="mb-6"
+          >
+            <RoleTypewriter />
+          </motion.div>
 
           <motion.p
             initial={{ opacity: 0, y: 20 }}
