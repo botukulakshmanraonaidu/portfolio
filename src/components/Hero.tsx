@@ -4,7 +4,7 @@ import RoleTypewriter from "./RoleTypewriter";
 
 const Hero = () => {
   return (
-    <section className="min-h-screen flex items-center justify-center relative overflow-hidden pt-20">
+    <section className="min-h-screen flex items-center justify-center relative overflow-hidden pt-16">
       {/* Premium background effects */}
       <div className="absolute inset-0 overflow-hidden">
         {/* Main gradient orbs */}
